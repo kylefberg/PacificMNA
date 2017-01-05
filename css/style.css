@@ -101,7 +101,6 @@ p {
 
 h1 {
   font-weight: 100;
-  font-size: 50px;
   font-family: 'Josefin Sans' !important;
 }
 
@@ -162,6 +161,12 @@ footer.page-footer {
 
 .contact {
   text-align: center;
+}
+
+#welcome {
+  margin-top: 350px;
+  font-size: 380px !important;
+
 }
 
 .quote {

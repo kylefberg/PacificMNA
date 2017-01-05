@@ -1,8 +1,8 @@
 $(function() {
 // navigation for the elevator function with links
   var homeNav = document.getElementById("nav-home");
-  var projectsNav = document.getElementById("nav-projects");
   var aboutNav = document.getElementById("nav-about");
+  var getInfoNav = document.getElementById("nav-getInfo");
   var contactNav = document.getElementById("nav-contact");
 
   new Elevator({
@@ -11,13 +11,13 @@ $(function() {
   });
 
   new Elevator({
-    element: projectsNav,
-    targetElement: document.querySelector('#projects'),
+    element: aboutNav,
+    targetElement: document.querySelector('#about'),
   });
 
   new Elevator({
-    element: aboutNav,
-    targetElement: document.querySelector('#about'),
+    element: getInfoNav,
+    targetElement: document.querySelector('#getInfo'),
   });
 
   new Elevator({
