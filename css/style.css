@@ -86,11 +86,11 @@ nav ul a,
 nav .brand-logo {
   color: #444;
   font-size: 15px;
-  font-family: 'Josefin Sans';
+  font-family: 'Uniform';
 }
 
 body {
-  font-family: 'Josefin Sans';
+  font-family: 'Uniform';
 }
 
 p {
@@ -100,22 +100,22 @@ p {
 }
 
 h1 {
-  font-weight: 100;
-  font-family: 'Josefin Sans' !important;
+  font-size: 80px !important;
+  font-family: 'Uniform' !important;
 }
 
 h2 {
   color: black;
-  font-family: 'Josefin Sans' !important;
+  font-family: 'Uniform' !important;
 }
 
 h3 {
-  color: black;
-  font-family: 'Josefin Sans' !important;
+  font-size: 40px !important;
+  font-family: 'Uniform' !important;
 }
 
 h5 {
-  font-family: 'Josefin Sans';
+  font-family: 'Uniform';
   font-weight: 700;
 }
 
@@ -153,10 +153,10 @@ footer.page-footer {
   border-radius: 50%;
 }
 
-#logo-helmet {
+#logo {
   max-height: 50px;
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .contact {
@@ -165,8 +165,12 @@ footer.page-footer {
 
 #welcome {
   margin-top: 350px;
-  font-size: 380px !important;
-
+  margin-left: 280px;
+  opacity: 0.8;
+  background-color: #0065A4;
+  border-radius: 25px;
+  width: 850px;
+  padding: 5px;
 }
 
 .quote {
