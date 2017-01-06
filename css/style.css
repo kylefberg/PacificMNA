@@ -85,7 +85,7 @@ only screen and (min-device-pixel-ratio: 1.5){
 nav ul a,
 nav .brand-logo {
   color: #444;
-  font-size: 15px;
+  font-size: 20px;
   font-family: 'Uniform';
 }
 
