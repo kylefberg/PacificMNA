@@ -15,8 +15,9 @@ only screen and (min-device-pixel-ratio: 1.5){
   }
 
   .welcome {
-    margin-bottom: 400px;
-    font-size: 20px;
+    margin-top: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
     opacity: 0.8;
     background-color: #0065A4;
     border-radius: 25px;
@@ -59,9 +60,11 @@ only screen and (min-device-pixel-ratio: 1.5){
     font-size: 15px;
   }
 
-  h1 {
-    font-size: 50px !important;
-    font-family: 'Uniform' !important;
+  .churchPlanters {
+    font-size: 50px;
+    font-family: 'Uniform';
+    color: white;
+    text-align: center;
   }
 
   h2 {
@@ -69,9 +72,11 @@ only screen and (min-device-pixel-ratio: 1.5){
     font-family: 'Uniform' !important;
   }
 
-  h3 {
-    font-size: 30px !important;
-    font-family: 'Uniform' !important;
+  .pacific {
+    font-size: 30px;
+    font-family: 'Uniform';
+    color: white;
+    text-align: center;
   }
 
   h5 {
@@ -90,30 +95,100 @@ only screen and (min-device-pixel-ratio: 1.5){
 }
 
 
+
+
+
+
 /*LARGE PHONE TO TABLET SIZE*/
 @media only screen
   and (min-device-width: 601px)
   and (max-device-width: 1024px){
-  #sliderimage {
+    #sliderimage {
     width: 100%;
     align-content: center;
-    }
- .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
   }
 
   .welcome {
-    margin-bottom: 200px;
+    margin-top: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
     opacity: 0.8;
     background-color: #0065A4;
     border-radius: 25px;
     padding: 5px;
   }
-}
+
+  #index-banner .section {
+    top: 0;
+  }
+
+  .navbar-fixed {
+    opacity: 0.9;
+  }
+
+   #index-banner .section {
+    top: 10%;
+  }
+
+  #logo {
+    max-height: 50px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+
+  nav ul a,
+  nav .brand-logo {
+    color: #444;
+    font-size: 20px;
+    font-family: 'Uniform';
+  }
+
+  body {
+    font-family: 'Uniform';
+  }
+
+  p {
+    line-height: 2rem;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .churchPlanters {
+    font-size: 50px;
+    font-family: 'Uniform';
+    color: white;
+    text-align: center;
+  }
+
+  h2 {
+    color: white;
+    font-family: 'Uniform' !important;
+  }
+
+  .pacific {
+    font-size: 30px;
+    font-family: 'Uniform';
+    color: white;
+    text-align: center;
+  }
+
+  h5 {
+    font-family: 'Uniform';
+    font-weight: 700;
+  }
+
+  footer.page-footer {
+    margin: 0;
+  }
+
+  .button-collapse {
+    color: #26a69a;
+  }
+
+
+
+
 
 
 /*DESKTOP TO LARGE SCREEN SIZE*/
@@ -174,9 +249,9 @@ only screen and (min-device-pixel-ratio: 1.5){
     font-size: 15px;
   }
 
-  h1 {
-    font-size: 80px !important;
-    font-family: 'Uniform' !important;
+  .churchPlanters {
+    font-size: 80px;
+    font-family: 'Uniform';
   }
 
   h2 {
@@ -184,9 +259,9 @@ only screen and (min-device-pixel-ratio: 1.5){
     font-family: 'Uniform' !important;
   }
 
-  h3 {
-    font-size: 40px !important;
-    font-family: 'Uniform' !important;
+  .pacific {
+    font-size: 40px;
+    font-family: 'Uniform';
   }
 
   h5 {
@@ -240,6 +315,8 @@ only screen and (min-device-pixel-ratio: 1.5){
 
   .welcome {
     margin-top: 350px;
+    margin-left: 30px;
+    margin-right: 30px;
     opacity: 0.8;
     background-color: #0065A4;
     border-radius: 25px;
