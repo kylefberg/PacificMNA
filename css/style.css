@@ -70,6 +70,7 @@ only screen and (min-device-pixel-ratio: 1.5){
   h2 {
     color: white;
     font-family: 'Uniform' !important;
+    text-align: center;
   }
 
   .pacific {
@@ -164,6 +165,7 @@ only screen and (min-device-pixel-ratio: 1.5){
   h2 {
     color: white;
     font-family: 'Uniform' !important;
+    text-align: center;
   }
 
   .pacific {
@@ -269,6 +271,7 @@ only screen and (min-device-pixel-ratio: 1.5){
   h2 {
     color: black;
     font-family: 'Uniform' !important;
+    text-align: center;
   }
 
   .pacific {
