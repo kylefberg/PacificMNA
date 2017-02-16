@@ -495,10 +495,17 @@
         var cornerstonecommunitychurch = {lat: 33.867528, lng: -118.103551}
         var covenantpresbyterianchurch = {lat: 35.331305, lng: -119.050996}
         var foothillsneighborhoodchurch = {lat: 34.162317, lng: -118.040162}
-        var gracepasadenachurch = {lat: 34.147978, lng: -118.148677};
+        var gracepasadenachurch = {lat: 34.147978, lng: -118.148677}
+        var kingschurch = {lat: 33.823343, lng: -118.186176}
+        var missiodei = {lat: 34.089607, lng: -118.275708}
+        var newcreationchurch = {lat: 34.160571, lng: -118.389046}
+        var newlifeburbank = {lat: 34.181337, lng: -118.348539}
+        var pacificcrossroads = {lat: 34.060783, lng: -118.368410}
+        var redeemerpresbyterianchurch = {lat: 33.808285, lng: -118.350309}
+        var valleypresbyterian = {lat: 34.237811, lng: -118.475761};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 8,
-          center: centermap
+          zoom: 9,
+          center: citylightchurch
         });
         var marker = new google.maps.Marker({
           position: calvarypresbyterianglendale,
@@ -534,6 +541,34 @@
         });
         var marker = new google.maps.Marker({
           position: gracepasadenachurch,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: kingschurch,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: missiodei,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: newcreationchurch,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: newlifeburbank,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: pacificcrossroads,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: redeemerpresbyterianchurch,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: valleypresbyterian,
           map: map
         });
       }
