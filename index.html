@@ -486,7 +486,6 @@
   <script src="js/main.js"></script>
     <script>
       function initMap() {
-        var centermap = {lat: 34.734428, lng: -118.396374}
         var calvarypresbyterianglendale = {lat: 34.154949, lng: -118.242329}
         var christchurchventura = {lat: 34.277656, lng: -119.239613}
         var christpresbyterianchurch = {lat: 34.425149, lng: -119.704620}
@@ -511,89 +510,212 @@
           position: calvarypresbyterianglendale,
           map: map
           })
-        function addInfoWindow(marker, message) {
-            var infoWindow = new google.maps.InfoWindow({
-                content: "Calvery Presbyterian Glendale 610 North Glendale Avenue Glendale, CA 91206 "
-            });
-            google.maps.event.addListener(marker, 'click', function () {
-                infoWindow.open(map, marker);
-            });
-        }
-addInfoWindow(marker);
+          var infowindow = new google.maps.InfoWindow();
+            google.maps.event.addListener(marker, 'click', (function(marker) {
+            return function() {
+               var content = "Calvary Presbyterian Church <br/> 610 North Glendale Avenue <br/> Glendale, CA 91206 ";
+               infowindow.setContent(content);
+               infowindow.open(map, marker);
+             }
+           })(marker));
 
 
         var marker = new google.maps.Marker({
           position: christchurchventura,
           map: map
         })
-        function addInfoWindow(marker, message) {
-            var infoWindow = new google.maps.InfoWindow({
-                content: "Christ Church Ventura 196 North Ashwood Avenue Ventura, CA 93003 "
-            });
-            google.maps.event.addListener(marker, 'click', function () {
-                infoWindow.open(map, marker);
-            });
-        }
-addInfoWindow(marker);
+          var infowindow = new google.maps.InfoWindow();
+            google.maps.event.addListener(marker, 'click', (function(marker) {
+            return function() {
+               var content = "Christ Church Ventura <br/> 196 North Ashwood Avenue <br/> Ventura, CA 93003 ";
+               infowindow.setContent(content);
+               infowindow.open(map, marker);
+             }
+           })(marker));
 
 
         var marker = new google.maps.Marker({
           position: christpresbyterianchurch,
           map: map
         });
+          var infowindow = new google.maps.InfoWindow();
+            google.maps.event.addListener(marker, 'click', (function(marker) {
+            return function() {
+               var content = "Christ Presbyterian Church <br/> 36 East Victoria Street <br/> Santa Barbara, CA 93101 ";
+               infowindow.setContent(content);
+               infowindow.open(map, marker);
+             }
+           })(marker));
+
         var marker = new google.maps.Marker({
           position: churchinthecanyon,
           map: map
         });
+          var infowindow = new google.maps.InfoWindow();
+            google.maps.event.addListener(marker, 'click', (function(marker) {
+            return function() {
+               var content = "Church in the Canyon <br/> 4235 Las Virgenes Road <br/> Calabasas, CA 91302 ";
+               infowindow.setContent(content);
+               infowindow.open(map, marker);
+             }
+           })(marker));
+
         var marker = new google.maps.Marker({
           position: citylightchurch,
           map: map
         });
+          var infowindow = new google.maps.InfoWindow();
+            google.maps.event.addListener(marker, 'click', (function(marker) {
+            return function() {
+               var content = "City Light Church <br/> ArtShare LA <br/> 801 East 4th Place <br/> Los Angeles, CA 90013";
+               infowindow.setContent(content);
+               infowindow.open(map, marker);
+             }
+           })(marker));
+
         var marker = new google.maps.Marker({
           position: cornerstonecommunitychurch,
           map: map
         });
+          var infowindow = new google.maps.InfoWindow();
+            google.maps.event.addListener(marker, 'click', (function(marker) {
+            return function() {
+               var content = "Cornerstone Community Church <br/> 18100 Dumont Avenue <br/> Cerritos, CA 90703 ";
+               infowindow.setContent(content);
+               infowindow.open(map, marker);
+             }
+           })(marker));
+
         var marker = new google.maps.Marker({
           position: covenantpresbyterianchurch,
           map: map
         });
+          var infowindow = new google.maps.InfoWindow();
+            google.maps.event.addListener(marker, 'click', (function(marker) {
+            return function() {
+               var content = "Covenant Presbyterian Church <br/> Central Seventh-Day Adventist Church <br/> 4201 Wilson Road <br/> Bakersfield, CA 93389 ";
+               infowindow.setContent(content);
+               infowindow.open(map, marker);
+             }
+           })(marker));
+
         var marker = new google.maps.Marker({
           position: foothillsneighborhoodchurch,
           map: map
         });
+          var infowindow = new google.maps.InfoWindow();
+            google.maps.event.addListener(marker, 'click', (function(marker) {
+            return function() {
+               var content = "Foothills Neighborhood Church <br/> 611 East Sierra Madre Blvd <br/> Sierra Madre, CA 91024 ";
+               infowindow.setContent(content);
+               infowindow.open(map, marker);
+             }
+           })(marker));
+
         var marker = new google.maps.Marker({
           position: gracepasadenachurch,
           map: map
         });
+          var infowindow = new google.maps.InfoWindow();
+            google.maps.event.addListener(marker, 'click', (function(marker) {
+            return function() {
+               var content = "Grace Pasadena Church Pasadena <br/> Senior Center <br/> 85 East Holly Street <br/> Pasadena, CA 91103 ";
+               infowindow.setContent(content);
+               infowindow.open(map, marker);
+             }
+           })(marker));
+
         var marker = new google.maps.Marker({
           position: kingschurch,
           map: map
         });
+          var infowindow = new google.maps.InfoWindow();
+            google.maps.event.addListener(marker, 'click', (function(marker) {
+            return function() {
+               var content = "King's Church <br/> Petroleum Club <br/> 3636 Linden Avenue <br/> Long Beach, CA 90807 ";
+               infowindow.setContent(content);
+               infowindow.open(map, marker);
+             }
+           })(marker));
+
         var marker = new google.maps.Marker({
           position: missiodei,
           map: map
         });
+          var infowindow = new google.maps.InfoWindow();
+            google.maps.event.addListener(marker, 'click', (function(marker) {
+            return function() {
+               var content = "Missio Dei <br/> 1532 Golden Gate Ave <br/> Los Angeles, CA 90026 ";
+               infowindow.setContent(content);
+               infowindow.open(map, marker);
+             }
+           })(marker));
+
         var marker = new google.maps.Marker({
           position: newcreationchurch,
           map: map
         });
+          var infowindow = new google.maps.InfoWindow();
+            google.maps.event.addListener(marker, 'click', (function(marker) {
+            return function() {
+               var content = "New Creation Church <br/> Colfax Elementary School <br/> 11724 Addison Street <br/> Valley Village, CA 91607 ";
+               infowindow.setContent(content);
+               infowindow.open(map, marker);
+             }
+           })(marker));
+
         var marker = new google.maps.Marker({
           position: newlifeburbank,
           map: map
         });
+          var infowindow = new google.maps.InfoWindow();
+            google.maps.event.addListener(marker, 'click', (function(marker) {
+            return function() {
+               var content = "New Life Burbank <br/> 1711 North Avon Street <br/> Burbank, CA 91505 ";
+               infowindow.setContent(content);
+               infowindow.open(map, marker);
+             }
+           })(marker));
+
         var marker = new google.maps.Marker({
           position: pacificcrossroads,
           map: map
         });
+          var infowindow = new google.maps.InfoWindow();
+            google.maps.event.addListener(marker, 'click', (function(marker) {
+            return function() {
+               var content = "Pacific Crossroads <br/> 6330 San Vicente Blvd, Suite 102 <br/> Los Angeles, CA 90048 ";
+               infowindow.setContent(content);
+               infowindow.open(map, marker);
+             }
+           })(marker));
+
         var marker = new google.maps.Marker({
           position: redeemerpresbyterianchurch,
           map: map
         });
+          var infowindow = new google.maps.InfoWindow();
+            google.maps.event.addListener(marker, 'click', (function(marker) {
+            return function() {
+               var content = "Redeemer Presbyterian Church <br/> 23860 Hawthorne Blvd, Suite 100 <br/> Torrance, CA 90505 ";
+               infowindow.setContent(content);
+               infowindow.open(map, marker);
+             }
+           })(marker));
+
         var marker = new google.maps.Marker({
           position: valleypresbyterian,
           map: map
         });
-      }
+          var infowindow = new google.maps.InfoWindow();
+            google.maps.event.addListener(marker, 'click', (function(marker) {
+            return function() {
+               var content = "Valley Presbyterian Church <br/> 9200 Haskell Avenue <br/> North Hills, CA 91343 ";
+               infowindow.setContent(content);
+               infowindow.open(map, marker);
+             }
+           })(marker));
+        };
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key.env&callback=initMap">
