@@ -486,12 +486,19 @@
   <script src="js/main.js"></script>
     <script>
       function initMap() {
+        var centermap = {lat: 34.734428, lng: -118.396374}
         var calvarypresbyterianglendale = {lat: 34.154949, lng: -118.242329}
         var christchurchventura = {lat: 34.277656, lng: -119.239613}
-        var christpresbyterianchurch = {lat: 34.425149, lng: -119.704620};
+        var christpresbyterianchurch = {lat: 34.425149, lng: -119.704620}
+        var churchinthecanyon = {lat: 34.136735, lng: -118.703005}
+        var citylightchurch = {lat: 34.044595, lng: -118.236375}
+        var cornerstonecommunitychurch = {lat: 33.867528, lng: -118.103551}
+        var covenantpresbyterianchurch = {lat: 35.331305, lng: -119.050996}
+        var foothillsneighborhoodchurch = {lat: 34.162317, lng: -118.040162}
+        var gracepasadenachurch = {lat: 34.147978, lng: -118.148677};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 9,
-          center: calvarypresbyterianglendale
+          zoom: 8,
+          center: centermap
         });
         var marker = new google.maps.Marker({
           position: calvarypresbyterianglendale,
@@ -505,10 +512,34 @@
           position: christpresbyterianchurch,
           map: map
         });
+        var marker = new google.maps.Marker({
+          position: churchinthecanyon,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: citylightchurch,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: cornerstonecommunitychurch,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: covenantpresbyterianchurch,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: foothillsneighborhoodchurch,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: gracepasadenachurch,
+          map: map
+        });
       }
     </script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD57kj8nyuZuTJ4RYN8-DTih6675N1iXkM&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key.env&callback=initMap">
     </script>
 </body>
 </html>
