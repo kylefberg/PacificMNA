@@ -510,11 +510,33 @@
         var marker = new google.maps.Marker({
           position: calvarypresbyterianglendale,
           map: map
-        });
+          })
+        function addInfoWindow(marker, message) {
+            var infoWindow = new google.maps.InfoWindow({
+                content: "Calvery Presbyterian Glendale 610 North Glendale Avenue Glendale, CA 91206 "
+            });
+            google.maps.event.addListener(marker, 'click', function () {
+                infoWindow.open(map, marker);
+            });
+        }
+addInfoWindow(marker);
+
+
         var marker = new google.maps.Marker({
           position: christchurchventura,
           map: map
-        });
+        })
+        function addInfoWindow(marker, message) {
+            var infoWindow = new google.maps.InfoWindow({
+                content: "Christ Church Ventura 196 North Ashwood Avenue Ventura, CA 93003 "
+            });
+            google.maps.event.addListener(marker, 'click', function () {
+                infoWindow.open(map, marker);
+            });
+        }
+addInfoWindow(marker);
+
+
         var marker = new google.maps.Marker({
           position: christpresbyterianchurch,
           map: map
